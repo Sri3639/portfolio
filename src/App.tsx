@@ -4,6 +4,7 @@ function App() {
 
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center">
+
         <h1 className="text-6xl font-bold">
           Sri
         </h1>
@@ -17,6 +18,7 @@ function App() {
             View Projects
           </button>
         </a>
+
       </section>
 
       {/* Projects Section */}
@@ -24,33 +26,59 @@ function App() {
         id="projects"
         className="min-h-screen bg-gray-900 flex flex-col justify-center items-center"
       >
+
         <h2 className="text-5xl font-bold mb-10">
           Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-10">
 
-          <div className="bg-black p-6 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold">
-              Expense Tracker
-            </h3>
+          {/* Expense Tracker Project */}
+          <a
+            href="https://github.com/Sri3639/expense-tracker"
+            target="_blank"
+          >
+            <div className="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
 
-            <p className="mt-4 text-gray-400">
-              Full Stack Expense Tracker using Spring Boot, React, MySQL.
-            </p>
-          </div>
+              <h3 className="text-2xl font-bold">
+                Expense Tracker
+              </h3>
 
-          <div className="bg-black p-6 rounded-2xl shadow-lg">
-            <h3 className="text-2xl font-bold">
-              Portfolio Website
-            </h3>
+              <p className="mt-4 text-gray-400">
+                Full Stack Expense Tracker using Spring Boot, React, MySQL.
+              </p>
 
-            <p className="mt-4 text-gray-400">
-              Personal portfolio built using React, TypeScript and Tailwind CSS.
-            </p>
-          </div>
+              <button className="mt-6 bg-white text-black px-4 py-2 rounded-lg">
+                View Project
+              </button>
+
+            </div>
+          </a>
+
+          {/* Portfolio Website Project */}
+          <a
+            href="https://github.com/Sri3639/portfolio"
+            target="_blank"
+          >
+            <div className="bg-black p-6 rounded-2xl shadow-lg hover:scale-105 transition duration-300 cursor-pointer">
+
+              <h3 className="text-2xl font-bold">
+                Portfolio Website
+              </h3>
+
+              <p className="mt-4 text-gray-400">
+                Personal portfolio built using React, TypeScript and Tailwind CSS.
+              </p>
+
+              <button className="mt-6 bg-white text-black px-4 py-2 rounded-lg">
+                View Project
+              </button>
+
+            </div>
+          </a>
 
         </div>
+
       </section>
 
     </div>
